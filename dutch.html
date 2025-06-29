@@ -525,15 +525,18 @@
       }
       
       header { 
-        padding: 30px 20px; 
-        flex-direction: column;
-        gap: 20px;
+        padding: 30px 20px !important; 
+        flex-direction: column !important;
+        align-items: center !important;
+        justify-content: center !important;
+        gap: 20px !important;
         text-align: center;
       }
       
       .profile-section {
-        flex-direction: column;
-        gap: 15px;
+        flex-direction: column !important;
+        gap: 15px !important;
+        align-items: center !important;
       }
       
       .profile-image {
@@ -542,7 +545,8 @@
       }
       
       .language-switcher {
-        justify-content: center;
+        justify-content: center !important;
+        width: 100%;
       }
       
       header h1 { font-size: 2rem; }
@@ -555,6 +559,22 @@
       
       .focus-areas {
         grid-template-columns: 1fr;
+      }
+    }
+
+    /* Extra small mobile devices */
+    @media (max-width: 480px) {
+      header {
+        padding: 20px 15px !important;
+      }
+      
+      .lang-btn {
+        padding: 6px 12px !important;
+        font-size: 0.8rem !important;
+      }
+      
+      .language-switcher {
+        gap: 8px !important;
       }
     }
 
